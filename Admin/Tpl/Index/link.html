@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>友情链接管理</title>
+</head>
+<body>
+	<div id='page'>
+		<table>
+			<volist name='link' id='link'>
+				<tr>
+					<td>{$link.url}</td>
+					<td>{$link.title}</td>
+					<td><a href="__URL__/delete_link/id/{$link.id}">删除</a></td>
+					<td><a href="__URL__/change_link/id/{$link.id}">修改</a></td>
+				</tr>
+			</volist>
+			<tr>
+				<td><a href="__URL__/new_link">新增</a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding-left: 0;
+}
+
+html{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#page{
+	margin:  0 auto;
+	width: 1200px;
+}

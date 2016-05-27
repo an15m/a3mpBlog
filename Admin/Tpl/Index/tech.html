@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>技术子栏管理</title>
+</head>
+<body>
+	<div id='page'>
+		<table>
+			<volist name='tech' id='tech'>
+				<tr>
+					<td>{$tech.techname}</td>
+					<td><a href="__URL__/delete_techname/id/{$tech.id}">删除</a></td>
+				</tr>
+			</volist>
+			<tr>
+				<td><a href="__URL__/new_techname">新增</a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

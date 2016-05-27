@@ -1,0 +1,98 @@
+array
+  0 => 
+    array
+      'id' => string '2' (length=1)
+      'title' => string '栏目无限极分类' (length=21)
+      'time' => string '1222' (length=4)
+      'content' => string '### 数据库设计
+
+  * Id(栏目id)
+
+  * CatName(栏目名称)
+
+  * Pid(父级栏目的id)
+
+  
+
+### 通过遍历重组，得到栏目树的形式
+
+  ```
+
+  //传入所有栏目数据data，顶级栏目的Pid，返回重组后的栏目树,一维数组。
+
+  function unlevelcate($data=array(),$pid=0,$html='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',$level=0){
+
+	$arr=array();
+
+	foreach ($data as $v) {
+
+		if($v['pid']==$pid){
+
+			$v['level']=$level+1;
+
+			$v['CatName']=str_repeat($html,$level).'|——'.$v['CatName'];
+
+'... (length=634)
+      'clicknumber' => string '0' (length=1)
+      'commentnumber' => string '0' (length=1)
+      'type' => string 'php' (length=3)
+	  
+  1 => 
+    array
+      'id' => string '1' (length=1)
+      'title' => string 'unity4.5版本hierarchy面板不按字母排序问题的解决' (length=62)
+      'time' => string '10000' (length=5)
+      'content' => string '  * 新建一个名为AlphaNumericSort的cs脚本
+
+  * 将以下代码复制粘贴进去
+
+  
+
+```  
+
+using UnityEngine;
+
+using UnityEditor;
+
+public class AlphaNumericSort : BaseHierarchySort
+
+{
+
+	public override int Compare(GameObject lhs, GameObject rhs)
+
+	{
+
+		if (lhs == rhs) return 0;
+
+		if (lhs == null) return -1;
+
+		if (rhs == null) return 1;
+
+		return EditorUtility.NaturalCompare(lhs.name, rhs.name);
+
+	}
+
+}
+
+```  
+
+
+
+  * 然后在hierarchy面板右上角有个星星图标，点击，可以选择AlphaN'... (length=565)
+      'clicknumber' => string '0' (length=1)
+      'commentnumber' => string '0' (length=1)
+      'type' => string 'unity' (length=5)
+	  'comments' =>
+					array
+						0 =>
+							array
+								'id'
+								'content'
+								'time'
+								'username'
+						1 =>
+							array
+								'id'
+								'content'
+								'time'
+								'username'

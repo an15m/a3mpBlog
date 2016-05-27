@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户信息管理</title>
+</head>
+<body>
+	<div id='page'>
+		<table>
+			<volist name='user' id='user'>
+				<tr>
+					<td>{$user.name}</td>
+					<td>{$user.email}</td>
+					<td><a href="__URL__/delete_user/id/{$user.id}">删除</a></td>
+				</tr>
+			</volist>
+		</table>
+		<form action="__URL__/user" method='post'>
+			开始：<input type="text" name='start'><br>
+			结束：<input type="text" name='end'><br>
+			<input type="submit" value="显示">
+		</form>
+	</div>
+</body>
+</html>

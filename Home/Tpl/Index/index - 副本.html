@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snail | 杨锦修的个人博客</title>
+	<script src="__JS__/jquery-1.9.0.js" type='text/javascript'></script>
+	<script src="__JS__/Markdown.Converter.js" type='text/javascript'></script>
+	<script src="__JS__/index.js" type='text/javascript'></script>
+	<link rel="stylesheet" type="text/css" href="__CSS__/index.css">
+</head>
+<body>
+	<div id='page'>
+		<div id='body'>
+			<div id='header'></div>
+			<div id='title'>
+				<a href="__APP__">
+					<img src="__IMAGES__/snail.png">
+				</a>
+			</div>
+			<div id='searchdiv'>
+				<form action="">
+					<input type="text" id='searchinput'>
+				</form>
+				
+				<img src="__IMAGES__/search.jpg" alt="" id='searchimg'>
+			</div>
+			<div id='user'>
+				<div id='not-login'>
+					<button id='login'>登陆</button>
+					<button id='register'>注册</button>
+				</div>
+				<div id='have-login'>
+					<div id='user-information'>
+						<span>
+							{$Think.session.username}
+						</span>
+					</div>
+					<div id='user-option'>
+						<img src="__IMAGES__/setting1.png">	
+						<ul>
+							<li>
+								<a href="__APP__/ChangeUserInformation/index">
+									<span>修改资料</span>
+								</a>
+							</li>
+							<li>
+								<a href="__APP__/Login/do_logout">
+									<span>退出</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id='left'>
+				<div id='logo'>
+					<img src="__IMAGES__/logo3.png">
+				</div>
+				<div id='motto-div'>
+					<span id='motto'>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎各位喜爱编程的小伙伴们多多来交流~ ~
+					</span>
+				</div>
+				<hr>
+				<ul id='navigation'>
+					<li id='home'>
+						<a href='__APP__'>
+							<img src="__IMAGES__/home.png">
+							<span>首页</span>
+					    </a>
+					</li>
+					<li id='tech'>
+						<div>
+							<ul id='tech-navigation-ul'>
+								<li id='tech-span'>
+									<img src="__IMAGES__/tech2.png">
+									<span id='techspan'>技术</span>
+								</li>
+								<li id='tech-navigation-li'>
+									<div id='tech-navigation-in'>
+										<ul id='navigation-in'>
+											<li >
+												<a href='__APP__'>
+													<span>unity</span>
+											    </a>
+											</li>
+											<li>
+												<a href='__APP__'>
+													<span>PHP</span>
+											    </a>
+											</li>
+											<li>
+												<a href='__APP__'>
+													<span>go-lang</span>
+											    </a>
+											</li>
+											<li>
+												<a href='__APP__'>
+													<span>4</span>
+											    </a>
+											</li>
+											<li>
+												<a href='__APP__'>
+													<span>5</span>
+											    </a>
+											</li>
+										</ul>
+									</div>	
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li id='life'>
+						<a href=''>
+							<img src="__IMAGES__/coffee.png">
+							<span>生活</span>
+					    </a>
+					</li>
+					<li id='message'>
+						<a href=''>
+							<img src="__IMAGES__/message.jpg">
+							<span>留言板</span>
+					    </a>
+					</li>
+					<li id='aboutme'>
+						<a href=''>
+							<img src="__IMAGES__/user.png">
+							<span>关于我</span>
+					    </a>
+					</li>
+				</ul>
+					
+				<div id='blank'></div>
+				<div id='link'>
+					<img src="__IMAGES__/link.png">
+					<span>友情链接</span><br>
+					<a href="https://github.com/bronze1man" target='_blank'>
+						<span>大申哥的GitHub</span>
+					</a>
+					<a href="http://dashu.me/" target='_blank'>
+						<span>大叔的博客</span>
+					</a>
+					<a href="http://asklove.diandian.com/" target='_blank'>
+						<span>大师的博客</span>
+					</a>
+					<a href="http://magiczhou.com/" target='_blank'>
+						<span>周毅的博客</span>
+					</a>
+					<a href="http://42.cnssuestc.org/" target='_blank'>
+						<span>42的博客</span>
+					</a>
+				</div>
+			</div>
+			<div id='middle'>
+				<div id='middle-header'>
+					<span>首页</span>
+				</div>
+				<div id='middle-content'>
+					<div>
+						<span class='date'>2014.10.04&nbsp;&nbsp;&nbsp;11:02</span>
+						<span class='sort'>分类：技术</span>
+						<br>
+						<a href="">
+							<span class='title'>第一篇</span>
+						</a>
+						
+						<div class='content' id='content-id0'>
+							<h2>unity4.5版本hierarchy面板不按字母排序问题的解决</h2>
+
+							<ul>
+							<li>新建一个名为AlphaNumericSort的cs脚本</li>
+							<li>将以下代码复制粘贴进去</li>
+							</ul>
+
+							<p><pre>
+using UnityEngine;
+using UnityEditor;
+public class AlphaNumericSort : BaseHierarchySort
+{
+    public override int Compare(GameObject lhs, GameObject rhs)
+    {
+        if (lhs == rhs) return 0;
+        if (lhs == null) return -1;
+        if (rhs == null) return 1;
+        return EditorUtility.NaturalCompare(lhs.name, rhs.name);
+    }
+}
+							</pre></p>
+
+							<ul>
+							<li>然后在hierarchy面板右上角有个星星图标，点击，可以选择AlphaNumericSort（按字母数字排序）或TransfromSort</li>
+							</ul>
+						</div>
+						<hr id='readall-hr'>
+						<div id='readall'>
+							<a href="">
+								<span> > 阅读全文</span>
+							</a>
+							<a href="" id='comment'>
+								<span>评论</span>
+							</a>
+						</div>
+						<div id='comments'>
+							<h3 id='comments-header'>留言：</h3>
+							<div id='comments-content'>
+								<div id='comment-0' class='comment'>
+									<div class='comment-header'>
+										<span>Snail :</span>
+									</div>
+									<div class='comment-content'>
+										<span>仨udhadjakhdadh啊哈速度快啊接啊哈苏德 啊肯定会啊肯定会啊肯定是啊客户端啊肯定会啊是肯定会阿克顿啊哈苏德金卡和大多数</span>
+									</div>
+									<div class='comment-footer'>
+										<span class='comment-number'>18楼</span>
+										<span class='comment-time'>2014年10月6日 22:32</span>
+										<a href="" >
+											<span class='comment-comment'>回复</span>
+										</a>
+										<hr>
+									</div>
+								</div>
+								<div id='comment-1' class='comment'>
+									<div class='comment-header'>
+										<span>Snail :</span>
+									</div>
+									<div class='comment-content'>
+										<span>仨udhadjakhdadh啊哈速度快啊接啊哈苏德 啊肯定会啊肯定会啊肯定是啊客户端啊肯定会啊是肯定会阿克顿啊哈苏德金卡和大多数 www.baidu.com</span>
+									</div>
+									<div class='comment-footer'>
+										<span class='comment-number'>18楼</span>
+										<span class='comment-time'>2014年10月6日 22:32</span>
+										<a href="" >
+											<span class='comment-comment'>回复</span>
+										</a>
+										<hr>
+									</div>
+								</div>
+							</div>
+							<div id='new-comment'>
+								<h3 id='new-comment-header'>我要发表评论：</h3>
+								<div id='new-comment-user-information'>
+									<table id='new-comment-user-information-table'>
+										<tr class='new-comment-user-information-tr'>
+											<td class='new-comment-user-information-td-words'>
+												<span>昵称</span>
+											</td>
+											<td  class='new-comment-user-information-td-input'>
+												<input type="text" class='new-comment-user-information-input' id=''>
+											</td>
+											<td>
+												<span>错误</span>
+											</td>
+										</tr>
+										<tr class='new-comment-user-information-tr'>
+											<td class='new-comment-user-information-td-words'>
+												<span>邮箱</span>
+											</td>
+											<td class='new-comment-user-information-td-input'>
+												<input type="text" name="" id="" class='new-comment-user-information-input'>
+											</td>
+											<td>
+												<span></span>
+											</td>
+										</tr>
+									</table>	
+								</div>
+								<div id='new-comment-content'>
+									<textarea name="" id="new-comment-content-textarea" cols="96" rows="10" required></textarea>
+									<button id='new-comment-button'>发表</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<span class='date'>2014.10.04&nbsp;&nbsp;&nbsp;11:02</span>
+						<span class='sort'>分类：技术</span>
+						<br>
+						<a href="">
+							<span class='title'>第一篇</span>
+						</a>
+						<div class='content' id='content-id1'>
+						</div>
+						<hr id='readall-hr'>
+						<div id='readall'>
+							<a href="">
+								<span> > 阅读全文</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id='readmore'>
+					<a href="">
+						<span>点击查看更多</span>
+						<img src="__IMAGES__/readmore2.png">
+					</a>
+				</div>
+				<!-- <div id='test'></div>
+				<button id='btn1'>测试</button> -->
+				<div id='about-me'>
+					<p>姓名：杨锦修</p>
+					<p>职业：在读大学生</p>
+					<p>学校：电子科技大学</p>
+					<p>Email：snailxiu@gmail.com</p>
+					<p>QQ：568975235</p>
+				</div>
+			</div>
+			<div id='right'>
+				<div id='nowlearn'>
+					<span id='nowlearn-1'>最近正在学习：</span><br>
+					<span id='nowlearn-2'>JQuery</span>
+				</div>
+				<div id='latest-articles'>
+					<span>最近发表：</span>
+					<hr>
+					<ul>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>	
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id='clickrank'>
+					<span>点击排行：</span>
+					<hr>
+					<ul>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>	
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span>计算机反复减肥</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

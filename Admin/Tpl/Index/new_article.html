@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章发表</title>
+	<link rel="stylesheet" href="__CSS__/new_article.css">
+</head>
+<body>
+	<div id="page">
+		<form action="__URL__/do_new_article" method='post'>
+			类别：<select id="s1_text1_bold" name='type'>
+				<option value="生活" selected="">生活</option>
+				<volist name='tech' id='tech'>
+					<option value="{$tech.techname}">{$tech.techname}</option>
+				</volist>
+	        </select><br>
+	        标题：<input type="text" name="title" id="title"><br>
+	        内容：<br><textarea name="content" id="" cols="130" rows="30"></textarea><br>
+	        <input type="submit" value="发表">
+		</form>
+	</div>
+</body>
+</html>

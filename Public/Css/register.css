@@ -1,0 +1,88 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #F8F8F7;
+}
+
+#page{
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 650px;
+	background-color: #F8F8F7;
+}
+
+.words{
+	text-align: center;
+	font-family: 微软雅黑;
+	font-size: 20px;
+	color: #666666;
+	letter-spacing:1px;
+}
+
+tr{
+	/*display: inline-block;*/
+	display: 
+	vertical-align: middle;
+}
+
+td{
+	vertical-align: middle;
+	display: inline-block;
+	height: 49px;
+	margin: 5px 0;
+	padding: 0;
+}
+
+span{
+	vertical-align: middle;
+	margin-right: 10px;
+	line-height: 2.2; 
+}
+
+.input{
+	height: 43px;
+	width: 259px;
+	border: 1px solid #D1D1D1;
+	border-radius: 5px;
+	outline: none;
+	font-size: 17px;
+	padding-left: 5px;
+	font-family: 微软雅黑;
+	color: #666666;
+	vertical-align: middle;
+	line-height: 2.5;
+}
+
+#register{
+	height: 47px;
+	width: 266px;
+	border: 1px solid #D1D1D1;
+	border-radius: 5px;
+	outline: none;
+	font-size: 17px;
+	margin-left: 96px;
+	margin-top: 10px;
+	font-family: 微软雅黑;
+	background-color: #73BDE6;
+	color: #FFFFFF;
+	letter-spacing:8px;
+	cursor: pointer;
+}
+
+#register:hover{
+	background-color: #4490F7;
+}
+
+.tips{
+	text-align: center;
+	font-family: 微软雅黑;
+	font-size: 15px;
+	color: #666666;
+	letter-spacing:1px;
+	margin-left: 15px;
+	height: 49px;
+	display: inline-block;
+	line-height: 3;
+}

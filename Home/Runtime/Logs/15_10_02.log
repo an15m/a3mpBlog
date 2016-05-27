@@ -1,0 +1,144 @@
+[ 2015-10-02T18:07:29+08:00 ] ERR: (ThinkException) Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+[ 2015-10-02T18:09:23+08:00 ] ERR: (ThinkException) Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+[ 2015-10-02T18:09:29+08:00 ] ERR: (ThinkException) Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+[ 2015-10-02T18:13:26+08:00 ] ERR: (ThinkException) Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+[ 2015-10-02T18:13:28+08:00 ] ERR: (ThinkException) Accès refusé pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)
+[ 2015-10-02T19:07:29+08:00 ] 127.0.0.1 /MyBlog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:28:20+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:28:20+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:28:20+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:13+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:29:13+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:13+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:31+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:29:31+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:31+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:48+08:00 ] 127.0.0.1 /MyBlog/Login/check
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:54+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:29:54+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:54+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:58+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:29:58+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:29:58+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-02T19:30:01+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:30:01+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-10-02T19:30:01+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:30:07+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:30:07+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:30:07+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-02T19:31:25+08:00 ] 127.0.0.1 /MyBlog/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\MyBlog\Home\Lib\Action\IndexAction.class.php ç¬¬ 82 è¡Œ.
+
+[ 2015-10-02T19:31:25+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-02T19:31:25+08:00 ] 127.0.0.1 /MyBlog/Index/limit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
