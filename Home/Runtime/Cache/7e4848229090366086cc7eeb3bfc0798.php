@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Snail | 杨锦修的个人博客</title>
 	<script src="__JS__/jquery-1.9.0.js" type='text/javascript'></script>
-	<script src="__JS__/Markdown.Converter.js" type='text/javascript'></script>
 	<script src="__JS__/index.js" type='text/javascript'></script>
 	<link rel="stylesheet" type="text/css" href="__CSS__/index.css">
 	<link rel="SHORTCUT ICON" href="__IMAGES__/k.ico">
@@ -94,12 +93,6 @@
 						<a href='__URL__/do_sort/type/生活'>
 							<img src="__IMAGES__/coffee.png">
 							<span>生活</span>
-					    </a>
-					</li>
-					<li id='message'>
-						<a href='__URL__/message'>
-							<img src="__IMAGES__/message.jpg">
-							<span>留言板</span>
 					    </a>
 					</li>
 					<li id='aboutme'>
@@ -206,66 +199,6 @@
 								</div>
 							</div>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
-				</div>
-				<div class='messages' style="display:<?php echo ($message); ?>">
-					<h3 class='messages-header'>留言(<?php echo ($message_number); ?>)：</h3>
-					<div class='messages-content'>
-						<?php if(is_array($messages)): $k2 = 0; $__LIST__ = array_slice($messages,0,$limit_articles,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$message): $mod = ($k2 % 2 );++$k2;?><div id='message-<?php echo ($message["id"]); ?>' class='message'>
-								<div class='message-header'>
-									<span><?php echo ($message["username"]); ?>:</span>
-								</div>
-								<div class='message-content'>
-									<span><?php echo ($message["content"]); ?></span>
-								</div>
-								<div class='message-footer'>
-									<span class='message-number'><?php echo ($k2); ?>楼</span>
-									<span class='message-time'>　<?php echo (date('Y.m.d　H:i',$message["time"])); ?>　</span>
-									<a href="#new-message" >
-										<span class='message-comment' floor='<?php echo ($k2); ?>'>回复</span>
-									</a>
-									<hr>
-								</div>
-							</div><?php endforeach; endif; else: echo "" ;endif; ?>
-					</div>
-					<div class='new-message'>
-						<a name="new-message"></a>
-						<h3 class='new-message-header'>我要留言：</h3>
-						<div class='new-message-content'>
-							<form action="__URL__/new_message" method='post' id='new-message-form'>
-								<div class='new-message-user-information'>
-									<table class='new-message-user-information-table'>
-										<tr class='new-message-user-information-tr'>
-											<td class='new-message-user-information-td-words'>
-												<span>昵称</span>
-											</td>
-											<td  class='new-message-user-information-td-input'>
-												<input type="text" class='new-message-user-information-input' name='username' id='new-message-username'>
-											</td>
-											<td class='new-message-user-information-tip' id='new-message-username-tip'>
-												<span>限4-32个字符(汉字算3个字符)</span>
-											</td>
-										</tr>
-										<tr class='new-message-user-information-tr'>
-											<td class='new-message-user-information-td-words'>
-												<span>邮箱</span>
-											</td>
-											<td class='new-message-user-information-td-input'>
-												<input type="text" name="useremail" id="new-message-useremail" class='new-message-user-information-input'>
-											</td>
-											<td class='new-message-user-information-tip' id='new-message-useremail-tip'>
-												<span>请输入正确的邮箱</span>
-											</td>
-										</tr>
-									</table>	
-								</div>
-								<div  class='new-message-textarea-tip'>
-									<span id='new-message-textarea-tip'></span>
-								</div>
-								<textarea name="new_message" class="new-message-content-textarea" cols="75" rows="8" required></textarea>
-							</form>
-							<button class='new-message-button'>发表</button>
-						</div>
-					</div>
 				</div>
 				<div id='readmore' style="display:<?php echo ($readmore); ?>">
 					<a href="__URL__/<?php echo ($fun); ?>/number/<?php echo ($number); ?>">

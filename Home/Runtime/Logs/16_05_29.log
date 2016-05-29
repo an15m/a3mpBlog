@@ -1,0 +1,300 @@
+[ 2016-05-29T14:53:57+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 84 行.
+
+[ 2016-05-29T14:57:29+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 84 行.
+
+[ 2016-05-29T15:06:21+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 84 行.
+
+[ 2016-05-29T15:08:10+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 81 行.
+
+[ 2016-05-29T15:08:34+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 81 行.
+
+[ 2016-05-29T15:09:00+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 81 行.
+
+[ 2016-05-29T15:10:54+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 76 行.
+
+[ 2016-05-29T15:11:03+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 76 行.
+
+[ 2016-05-29T15:11:06+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 76 行.
+
+[ 2016-05-29T15:35:16+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:37:10+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:37:11+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:37:20+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:37:45+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:39:18+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:40:38+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:40:50+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:41:06+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:41:42+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:42:41+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:44:01+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:44:28+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:45:08+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:45:53+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 78 行.
+
+[ 2016-05-29T15:46:06+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 78 行.
+
+[ 2016-05-29T15:46:26+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:48:11+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:49:30+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:49:35+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:50:27+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:50:55+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:50:58+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:52:46+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:52:51+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:52:55+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T15:53:20+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:00:01+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:00:43+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:01:36+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:01:38+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:02:06+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:02:09+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:02:52+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:02:58+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:03:00+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:03:04+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:03:17+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:07:08+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:07:14+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+
+[ 2016-05-29T16:08:47+08:00 ] 0.0.0.0 /dandelionblog/index.php/Index/IsLogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: login E:\RecordOfLearn\Web\www\dandelionBlog\Home\Lib\Action\IndexAction.class.php 第 77 行.
+

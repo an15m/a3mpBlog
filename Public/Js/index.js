@@ -55,7 +55,6 @@ $(function(){
 	    			if((!$(".new-message-content-textarea").val())||messageEmpty){
 						$(".new-message-textarea-tip span").val("留言内容不能为空！");
 	    				$(".new-message-button").unbind();
-	    				alert("1");
 	    			}else{
 	    				$("#new-message-form").submit();
 	    			}
@@ -210,95 +209,6 @@ $(function(){
 	    },
 	    async : false ,
 	});
-
-
-    //markdown支持(更改为后台处理)
-    function forMarkdown(){
-    	$(".content").each(function(index, el) {
-    		var converter = new Markdown.Converter();
-    		// var mdVal = $(this).val();
-        	var mdVal = $(this).text();
-	        var htmlVal = converter.makeHtml(mdVal);
-	        htmlVal=code2pre(htmlVal);
-	        // alert(htmlVal);
-	        $(this).html("");
-	        $(this).append(htmlVal);
-    	});
-    }
-    function code2pre(str){
-        return str.replace(/code/g,"pre");
-    }
-    // forMarkdown();
-
-
-    //处理文章内容中空的p标签和没有li的ul标签
-    function removeBlankPAndUl(){
-    	$(".content p").each(function(index, el) {
-			var text=$(this).html();
-			var count=0;
-			for(var i=1;i<text.length;i++){
-				if(text[i]!=' '){
-					count=1;
-				}
-			}		
-			if(count==0){
-				$(this).remove();
-			}
-		});
-
-		$(".content ul").each(function(index, el) {
-			if($(this).children().length==0){
-				$(this).remove();
-			}	
-		});
-    }
-
-    //限长显示
-    var IsLimit=1;
-	$.ajax({
-	    url: root_url + 'index.php/Index/limit',
-	    success: function(data1){
-	    	IsLimit=data1;
-	    },
-	    async : false ,
-	});
-    function limitLength(limit){
-    	$(".content").each(function(index, el) {
-    		var num=0;
-	        var count=0;
-	        var id=$(this).attr('id');
-			$("#"+id+" *").each(function(index, el) {
-				if($(this).children().length==0){
-					
-					var temp=num;
-					num+=$(this).html().length;
-					if(count==1){
-						   $(this).remove();
-					}
-					if(num>limit&&count==0){
-						count=1;
-						var text=$(this).html().substring(0,limit-temp)+"..."; 
-						$(this).html(text); 
-					}
-				}
-			});
-    	});
-		
-    }
-    $.ajax({
-    	url: root_url + 'index.php/Index/limit',
-    	async : false ,
-    })
-    .done(function(result) {
-    	if(result==1){
-    		limitLength(50);
-    	}
-    	//处理文章内容中空的p标签和没有li的ul
-		removeBlankPAndUl();
-		$("#middle-content").css('display', 'block');
-    })
-    
-    
 
 
     //测试

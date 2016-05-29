@@ -453,7 +453,7 @@ img{
 }
 
 #middle-content{
-	display: none;
+	display: block;
 }
 
 #middle-content .articles{
@@ -512,7 +512,7 @@ img{
 	padding-top: 0;
 	margin-top: 0 !important;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #cccccc;
+	/*border-bottom: 1px solid #cccccc;*/
 	color: black;
 	font-weight: bold;
 	-webkit-font-smoothing: antialiased;

@@ -1,6 +1,6 @@
 <?php
     header("Content-type: text/html; charset=utf-8");  //设置编码字符集
-    require './Public/PHP/markdown.php';  //markdown解析器
+    require './Public/PHP/Parsedown.php';//markdown解析器
     class IndexAction extends CommonAction {
 
         //主页
@@ -20,16 +20,16 @@
             $total_visit_data['total_visit']=$total_visit+1;
             $other->where('id = 0')->save($total_visit_data);
 
-            //是否限制文章长度
-            $_SESSION['is_limit']=1;
-
             //取文章并分配
             $articles=M("Articles");
             $rst=$articles->order('time desc')->select();
-            //markdown解析
+            //处理预览和markdown解析
             for($i=0;$i<count($rst);$i++){
-                $rst[$i]['content']=Markdown($rst[$i]['content']);
-                $rst[$i]['content']=preg_replace('/code/', 'pre', $rst[$i]['content']);
+                $rst[$i]['content'] = explode("<input type=\"hidden\"", $rst[$i]['content'])[0]." 未完待续‥‥‥";
+                $Parsedown = new Parsedown();
+                $rst[$i]['content'] = $Parsedown->text($rst[$i]['content']);
+                //$rst[$i]['content']=Markdown($rst[$i]['content']);
+                //$rst[$i]['content']=preg_replace('/code/', 'pre', $rst[$i]['content']);
             }
             $this->assign("articles",$rst);
 
@@ -72,11 +72,6 @@
         	$this->display();
         }
 
-        //是否限制文章长度
-        public function limit(){
-        	echo $_SESSION['is_limit'];
-        }
-
         //判断是否登陆
         public function IsLogin(){
         	if($_SESSION['login']==1){
@@ -109,9 +104,6 @@
             $latest_articles_rst=$latest_articles->order('time desc')->field(array('title','id'))->limit(5)->select();
             $this->assign('latest_articles',$latest_articles_rst);
 
-            //是否限制文章长度
-            $_SESSION['is_limit']=0;
-
             //技术子栏内容
             $tech=M("Tech");
             $techrst=$tech->select();
@@ -125,8 +117,10 @@
             $rst=$article->where($where)->select();
             //markdown解析
             for($i=0;$i<count($rst);$i++){
-                $rst[$i]['content']=Markdown($rst[$i]['content']);
-                $rst[$i]['content']=preg_replace('/code/', 'pre', $rst[$i]['content']);
+                $Parsedown = new Parsedown();
+                $rst[$i]['content'] = $Parsedown->text($rst[$i]['content']);
+                //$rst[$i]['content']=Markdown($rst[$i]['content']);
+                //$rst[$i]['content']=preg_replace('/code/', 'pre', $rst[$i]['content']);
             }
             if(!$rst){
                 $this->error('文章不存在！');
@@ -192,19 +186,19 @@
             $latest_articles_rst=$latest_articles->order('time desc')->field(array('title','id'))->limit(5)->select();
             $this->assign('latest_articles',$latest_articles_rst);
 
-            //是否限制文章长度
-            $_SESSION['is_limit']=1;
-
             //获取分类文章
             $type=$_GET['type'];
             $articles=M("Articles");
             $where['type']=$type;
             $rst=$articles->where($where)->order("time")->select();
             if($rst){
-                //markdown解析
+                //处理预览和markdown解析
                 for($i=0;$i<count($rst);$i++){
-                    $rst[$i]['content']=Markdown($rst[$i]['content']);
-                    $rst[$i]['content']=preg_replace('/code/', 'pre', $rst[$i]['content']);
+                    $rst[$i]['content'] = explode("<input type=\"hidden\"", $rst[$i]['content'])[0]." 未完待续‥‥‥";
+                    $Parsedown = new Parsedown();
+                    $rst[$i]['content'] = $Parsedown->text($rst[$i]['content']);
+                    //$rst[$i]['content']=Markdown($rst[$i]['content']);
+                    //$rst[$i]['content']=preg_replace('/code/', 'pre', $rst[$i]['content']);
                 }
                 
                 //技术子栏内容
@@ -282,7 +276,8 @@
             //显示模板
             $this->display("index");
         }
-
+        
+        /*
         //留言板
         public function message(){
             //友情链接
@@ -341,6 +336,7 @@
             //显示模板
             $this->display("index");
         }
+        */
 
         //搜索
         public function search(){
@@ -355,19 +351,19 @@
             $this->assign("motto",$otherRst['motto']);
             $this->assign("now_learn",$otherRst['now_learn']);
 
-            //是否限制文章长度
-            $_SESSION['is_limit']=1;
-
             //取文章并分配
             $articles=M("Articles");
             $data['title']=array("like","%".$_POST['search']."%");
             $data['content']=array("like","%".$_POST['search']."%");
             $data['_logic']="or";
             $searchRst=$articles->order('time desc')->where($data)->select();
-            //markdown解析
+            //处理预览和markdown解析
             for($i=0;$i<count($searchRst);$i++){
-                $searchRst[$i]['content']=Markdown($searchRst[$i]['content']);
-                $searchRst[$i]['content']=preg_replace('/code/', 'pre', $searchRst[$i]['content']);
+                $searchRst[$i]['content'] = explode("<input type=\"hidden\"", $searchRst[$i]['content'])[0]." 未完待续‥‥‥";
+                $Parsedown = new Parsedown();
+                $searchRst[$i]['content'] = $Parsedown->text($searchRst[$i]['content']);
+                //$searchRst[$i]['content']=Markdown($searchRst[$i]['content']);
+                //$searchRst[$i]['content']=preg_replace('/code/', 'pre', $searchRst[$i]['content']);
             }
             $this->assign("articles",$searchRst);
 
