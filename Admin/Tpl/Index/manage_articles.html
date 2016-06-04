@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章管理</title>
+	<link rel="stylesheet" href="__CSS__/manage_articles.css">
+</head>
+<body>
+	<div id='page'>
+		<table>
+			<tr>
+				<td>
+					<form action='__URL__/{$fun}' method='get'>
+						<input type='text' name='search' size=35></input>
+						<button type='submit'>搜索</button>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="__URL__/manage_articles" method='get'>
+						类别：
+						<select id="s1_text1_bold" name='type'>
+							<option value="生活" selected="">生活</option>
+							<volist name='tech' id='tech'>
+								<option value="{$tech.techname}">{$tech.techname}</option>
+							</volist>
+					    </select>
+				        <input type="submit" value="选择">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td class='td'>标题</td>
+				<td class='td'>类型</td>
+				<td class='td'>删除</td>
+				<td class='td'>修改</td>
+			</tr>
+			<volist name='articles' id='articles'>
+				<tr>
+					<td class='td'>{$articles.title}</td>
+					<td class='td'>{$articles.type}</td>
+					<td class='td'><a href="__URL__/delete_article/id/{$articles.id}">删除</a></td>
+					<td class='td'><a href="__URL__/change_article/id/{$articles.id}">修改</a></td>
+				</tr>
+			</volist>
+			<tr>
+				<td>
+					<form action='__URL__/{$fun}' method='get'>
+						<span>共{$total_pages}页，到第</span>
+						<input type='text' value="{$now_page}" name='now_page' size=3></input>
+						<button type='submit'>确定</button>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="__URL__/new_article">新增</a></td>
+			</tr>
+		</table>
+
+	</div>
+</body>
+</html>

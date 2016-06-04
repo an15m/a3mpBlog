@@ -11,45 +11,18 @@
 <body>
 	<div id='page'>
 		<div id='body'>
-			<div id='header'></div>
-			<div id='title'>
+			<div id='header'>
+				<div id='title'>
 				<a href="__APP__">
 					<img src="__IMAGES__/snail.png">
 				</a>
-			</div>
-			<div id='searchdiv'>
-				<form action="__URL__/search" method='post' id='searchform'>
+				</div>
+				<div id='searchdiv'>
+				<form action="__URL__/search" method='get' id='searchform'>
 					<input type="text" name='search' id='searchinput' value=''>
 				</form>
 				<img src="__IMAGES__/search.jpg" alt="" id='searchimg'>
-			</div>
-			<div id='user'>
-				<div id='not-login'>
-					<button id='login'>登陆</button>
-					<button id='register'>注册</button>
-				</div>
-				<div id='have-login'>
-					<div id='user-information'>
-						<span>
-							<?php echo (session('username')); ?>
-						</span>
-					</div>
-					<div id='user-option'>
-						<img src="__IMAGES__/setting1.png">	
-						<ul>
-							<li>
-								<a href="__APP__/ChangeUserInformation/index">
-									<span>修改资料</span>
-								</a>
-							</li>
-							<li>
-								<a href="__APP__/Login/do_logout">
-									<span>退出</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+			 	</div>
 			</div>
 			<div id='left'>
 				<div id='logo'>
@@ -117,8 +90,8 @@
 					<span><?php echo ($header); ?></span>
 				</div>
 				<div id='middle-content'>
-					<?php if(is_array($articles)): $k = 0; $__LIST__ = array_slice($articles,0,$limit_articles,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($k % 2 );++$k;?><div class='articles' id="article-<?php echo ($article["id"]); ?>">
-							<span class='date'><?php echo (date('Y.m.d　H:i',$article["time"])); ?></span>
+					<?php if(is_array($articles)): $k = 0; $__LIST__ = array_slice($articles,0,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($k % 2 );++$k;?><div class='articles' id="article-<?php echo ($article["id"]); ?>">
+							<span class='date'><?php echo (date('Y.m.d　　　',$article["time"])); ?></span>
 							<span class='sort'>分类：<?php echo ($article["type"]); ?></span>
 							<br>
 							<a href="__URL__/read_all/id/<?php echo ($article["id"]); ?>">
@@ -133,85 +106,14 @@
 								<a href="__URL__/read_all/id/<?php echo ($article["id"]); ?>" style="display:<?php echo ($readall); ?>">
 									<span> > 阅读全文</span>
 								</a>
-								<a href="#new-comment" class='comment' style="display:<?php echo ($discuss); ?>">
-									<span>评论</span>
-								</a>
-							</div>
-							<div class='comments' style="display:<?php echo ($comments); ?>">
-								<h3 class='comments-header'>评论(<?php echo ($comment_number); ?>)：</h3>
-								<div class='comments-content'>
-									<?php if(is_array($article["comments"])): $k1 = 0; $__LIST__ = $article["comments"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$comment): $mod = ($k1 % 2 );++$k1;?><div id='comment-<?php echo ($comment["id"]); ?>' class='comment'>
-											<div class='comment-header'>
-												<span><?php echo ($comment["username"]); ?>:</span>
-											</div>
-											<div class='comment-content'>
-												<span><?php echo ($comment["content"]); ?></span>
-											</div>
-											<div class='comment-footer'>
-												<span class='comment-number'><?php echo ($k1); ?>楼</span>
-												<span class='comment-time'>　<?php echo (date('Y.m.d　H:i',$comment["time"])); ?>　</span>
-												<a href="#new-comment">
-													<span class='comment-comment' floor='<?php echo ($k1); ?>'>回复</span>
-												</a>
-												<hr>
-											</div>
-										</div><?php endforeach; endif; else: echo "" ;endif; ?>
-								</div>
-							</div>
-							<div class='new-comment' style="display:<?php echo ($new_comment); ?>">
-								<a name='new-comment'></a>
-								<h3 class='new-comment-header'>我要发表评论：</h3>
-								<div class='new-comment-content'>
-									<form action="__URL__/new_comment" method='post' id='new-comment-form'>
-										<div class='new-comment-user-information'>
-											<table class='new-comment-user-information-table'>
-												<tr class='new-comment-user-information-tr'>
-													<td class='new-comment-user-information-td-words'>
-														<span>昵称</span>
-													</td>
-													<td  class='new-comment-user-information-td-input'>
-														<input type="text" class='new-comment-user-information-input' name='username' id='new-comment-username'>
-													</td>
-													<td class='new-comment-user-information-tip' id='new-comment-username-tip'>
-														<span>限4-32个字符(汉字算3个字符)</span>
-													</td>
-												</tr>
-												<tr class='new-comment-user-information-tr'>
-													<td class='new-comment-user-information-td-words'>
-														<span>邮箱</span>
-													</td>
-													<td class='new-comment-user-information-td-input'>
-														<input type="text" name="useremail" id="new-comment-useremail" class='new-comment-user-information-input'>
-													</td>
-													<td class='new-comment-user-information-tip' id='new-comment-useremail-tip'>
-														<span>请输入正确的邮箱</span>
-													</td>
-												</tr>
-											</table>	
-										</div>
-										<div  class='new-comment-textarea-tip'>
-											<span id='new-comment-textarea-tip'></span>
-										</div>
-										<textarea name="new_comment" class="new-comment-content-textarea" cols="75" rows="8"></textarea>
-										<input type="hidden" name="article_id" value="<?php echo ($article_id); ?>">
-									</form>
-									<button class='new-comment-button'>发表</button>
-								</div>
 							</div>
 						</div><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
-				<div id='readmore' style="display:<?php echo ($readmore); ?>">
-					<a href="__URL__/<?php echo ($fun); ?>/number/<?php echo ($number); ?>">
-						<span>点击查看更多</span>
-						<img src="__IMAGES__/readmore2.png">
-					</a>
+				<div id='paging' style="display:<?php echo ($paging_display); ?>">
+					<?php echo ($paging); ?>
 				</div>
 				<div id='about-me' style="display:<?php echo ($about_me); ?>">
-					<p>姓名：杨锦修</p>
-					<p>职业：在读大学生</p>
-					<p>学校：电子科技大学通信与信息工程学院2013级</p>
-					<p>Email：snailxiu@gmail.com</p>
-					<p>QQ：568975235</p>
+					<?php echo ($about_me_content); ?>
 				</div>
 			</div>
 			<div id='right'>
@@ -220,18 +122,18 @@
 					<span id='nowlearn-2'><?php echo ($now_learn); ?></span>
 				</div>
 				<div id='latest-articles'>
-					<span>最近发表：</span>
+					<span class='right-title'>最近发表：</span>
 					<hr>
 					<ul>
 						<table>
-							<?php if(is_array($latest_articles)): $i = 0; $__LIST__ = $latest_articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$latest_article): $mod = ($i % 2 );++$i;?><tr>
+							<?php if(is_array($latest_articles)): $i = 0; $__LIST__ = $latest_articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$latest_article): $mod = ($i % 2 );++$i;?><tr class='right-tr'>
 									<td class='li-image-td'>
 										<img src="__IMAGES__/point.jpg" class='li-image'>
 									</td>
-									<td>
+									<td id='right-td'>
 										<li>
-											<a href="__URL__/read_all/id/<?php echo ($latest_article["id"]); ?>">
-												<span><?php echo ($latest_article["title"]); ?></span>
+											<a class='right-a' href="__URL__/read_all/id/<?php echo ($latest_article["id"]); ?>">
+												<span class='right-span'><?php echo ($latest_article["title"]); ?></span>
 											</a>
 										</li>
 									</td>	
@@ -240,18 +142,18 @@
 					</ul>
 				</div>
 				<div id='clickrank'>
-					<span>点击排行：</span>
+					<span class='right-title'>点击排行：</span>
 					<hr>
 					<ul>
 						<table>
-							<?php if(is_array($click_articles)): $i = 0; $__LIST__ = $click_articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$click_article): $mod = ($i % 2 );++$i;?><tr>
+							<?php if(is_array($click_articles)): $i = 0; $__LIST__ = $click_articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$click_article): $mod = ($i % 2 );++$i;?><tr class='right-tr'>
 									<td class='li-image-td'>
 										<img src="__IMAGES__/point.jpg" class='li-image'>
 									</td>
-									<td>
+									<td id='right-td'>
 										<li>
-											<a href="__URL__/read_all/id/<?php echo ($click_article["id"]); ?>">
-												<span><?php echo ($click_article["title"]); ?>(<?php echo ($click_article["clicknumber"]); ?>)</span>
+											<a class='right-a' href="__URL__/read_all/id/<?php echo ($click_article["id"]); ?>">
+												<span class='right-span'><?php echo ($click_article["title"]); ?>(<?php echo ($click_article["clicknumber"]); ?>)</span>
 											</a>
 										</li>
 									</td>

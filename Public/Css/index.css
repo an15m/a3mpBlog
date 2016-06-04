@@ -20,18 +20,14 @@ img{
 	position: relative;
 }
 
-
-
-
 /*页面头*/
 #header{
 	width: 1280px;
 	height: 60px;
-	position: absolute;
+	position: relative;
 	top: 0px;
 	left: 0px;
 	background-color: #232B2D;
-	z-index: -1;
 }
 
 /*snail图片*/
@@ -86,138 +82,6 @@ img{
 	left: 180px;
 	top:-30px;
 	cursor: pointer;
-}
-
-/*头部用户信息*/
-#user{
-	float: left;
-	position: relative;
-	width: 255px;
-	height: 60px;
-}
-
-/*未登陆状态*/
-#not-login{
-	display: none;
-	float: left;
-	height: 60px;
-}
-
-#user #login{
-	background-color: #74C658;
-	outline:none;
-	border: 1px solid #74C658;
-	border-radius: 3px;
-	width: 50px;
-	height: 30px;
-	margin: 0px;
-	margin-top: 15px;
-	margin-left: 80px;
-	font-size: 14px;
-	font-family: 微软雅黑;
-	cursor: pointer;
-	
-}
-
-#user #register{
-	background-color: #4B8DF7;
-	outline:none;
-	border: 1px solid #4B8DF7;
-	border-radius: 3px;
-	width: 50px;
-	height: 30px;
-	margin: 0px;
-	margin-top: 15px;
-	margin-left: 30px;
-	font-size: 14px;
-	font-family: 微软雅黑;
-	cursor: pointer;
-}
-
-/*登陆状态*/
-#have-login{
-	display: none;
-	overflow: hidden;
-}
-
-#user #user-information{
-	outline:none;
-	height: 60px;
-	margin: 0px;
-	margin-left: 30px;
-	font-size: 15px;
-	font-family: 微软雅黑;
-	color: white;
-	line-height: 3.9;
-	text-align: right;
-	padding-left: 10px;
-	padding-right: 10px;
-	cursor: default;
-	float: left;
-	width: 165px;
-}
-
-#user #user-option{
-	background-color: white;
-	position: absolute;
-	top: 60px;
-	left: 125px;
-	width: 130px;
-	height: auto;
-	float: left;
-	z-index: 10;
-	float: left;
-}
-
-#user #user-option img{
-	position: absolute;
-	left: 82px;
-	top: -60px;
-	z-index: 100;
-	width: 18px;
-	height: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 15px;
-	padding-right: 15px;
-	display: inline-block;
-}
-
-#user-option ul{
-	margin: 0px;
-	padding-left: 0px;
-	width: 130px;
-	line-height: 0;
-	display: none;
-}
-
-#user-option ul li{
-	height: 40px;
-	width: 120px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	line-height: 2.5;
-	text-align: center;
-	display: inline-block;
-	list-style-type:none;
-}
-
-#user-option ul li a{
-	height: 40px;
-	width: 118px;
-	display: inline-block;
-}
-
-#user-option ul li:hover{
-	background-color: #CCC;
-}
-
-#user-option ul li span{
-	font-family: 微软雅黑;
-	color: #555;
-	font-size: 15px;
 }
 
 /*页面body*/
@@ -473,6 +337,8 @@ img{
 	display: inline-block;
 	margin-left: 30px;
 	margin-top: 15px;
+	word-break: break-all;
+	width:720px;
 }
 
 #middle-content div a .title:hover{
@@ -564,182 +430,10 @@ img{
 	border-radius: 3px;
 }
 
-#middle-content div .comments{
-	margin-left: 0px;
-}
-
 .readall-hr{
 	width: 740px;
 	height:0px;
 	border: 1px solid white;
-}
-
-.articles .readall .comment{
-	margin-left: 700px;
-}
-
-.readall .comment span{
-	margin-left: 0px;
-}
-
-.comments div{
-	margin-left: 0px;
-}
-
-.comments .comments-header{
-	margin-left: 20px;
-	width: 740px;
-	font-family: 微软雅黑;
-	color: #676767;
-}
-
-.comments .comment div{
-	margin-left: 30px;
-	margin-right: 30px;
-	width: 720px;
-	font-family: 微软雅黑;
-	color: #676767;
-}
-
-.comments .comment div span{
-	font-family: 微软雅黑;
-	color: #676767;
-}
-
-.comments .comment .comment-content{
-	margin-left: 40px;
-	margin-right: 40px;
-	width: 700px;
-}
-
-.comments .comment .comment-content *{
-	white-space: pre-line;
-}
-
-.comments .comment-footer .comment-number{
-	margin-left: 420px;
-	display: inline-block;
-}
-
-.comments .comment-footer span{
-	margin-right: 21px;
-	display: inline-block;
-}
-
-.comments .comment-footer .comment-comment{
-	margin-left: 15px;
-	margin-right: 0px;
-}
-
-.comments .comment-footer .comment-comment:hover{
-	color: #C90B0B;
-}
-
-.comments .comment-footer{
-	padding-bottom: 20px;
-}
-
-.new-comment{
-	display: none;
-}
-
-.new-comment .new-comment-user-information{
-	width: 750px;
-}
-
-.new-comment .new-comment-user-information .new-comment-user-information-tr{
-	vertical-align: middle;
-	height: 30px;
-
-}
-
-
-.new-comment .new-comment-user-information .new-comment-user-information-td-words{
-	width: 50px;
-	display: inline-block;
-	font-family: 微软雅黑;
-	font-size: 15px;
-	color: #676767;
-	text-align: center;
-	vertical-align: middle;
-	height: 30px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding: 0;
-}
-
-.new-comment .new-comment-user-information .new-comment-user-information-td-words span{
-	height: 30px;
-	display: inline-block;
-	line-height: 1.8;
-	margin: 0;
-	padding: 0;
-}
-
-.new-comment .new-comment-user-information .new-comment-user-information-td-input{
-	height: 30px;
-	display: inline-block;
-	line-height: 1.5;
-	margin: 0;
-	padding: 0;
-}
-
-.new-comment .new-comment-user-information .new-comment-user-information-input{
-	width: 250px;
-	display: inline-block;
-	height: 24px;
-	margin: 0;
-	padding: 0;
-	font-family: 微软雅黑;
-}
-
-.new-comment .new-comment-user-information .new-comment-user-information-tip{
-	text-align: center;
-	font-family: 微软雅黑;
-	font-size: 15px;
-	color: #666666;
-	letter-spacing: 1px;
-	margin-left: 15px;
-	display: inline-block;
-}
-
-.new-comment .new-comment-textarea-tip{
-	text-align: center;
-	font-family: 微软雅黑;
-	font-size: 15px;
-	color: #AB0707;
-	letter-spacing: 1px;
-	margin-left: 20px;
-	display: inline-block;
-	height: 25px;
-	width: 650px;
-}
-
-.new-comment-header{
-	margin-left: 20px;
-	width: 740px;
-	font-family: 微软雅黑;
-	color: #676767;
-}
-
-.new-comment .new-comment-content{
-	padding-left: 40px;
-	width: 740px;
-	padding-bottom: 20px;
-}
-
-.new-comment-content-textarea{
-	resize:none;
-	font-family: 微软雅黑;
-	font-size: 17px;
-}
-
-.new-comment-button{
-	color: #676767;
-}
-
-#test-article{
-	display: none;
 }
 
 #middle-content div .readall{
@@ -765,7 +459,8 @@ img{
 	color: #C90B0B;
 }
 
-#readmore{
+/*分页*/
+#paging{
 	width: 780px;
 	height: 50px;
 	background-color: #F1F1F1;
@@ -775,28 +470,32 @@ img{
 	margin-bottom: 100px;
 	border: 1px solid white;
 	border-radius: 10px;
+	text-align: center;
 }
 
-#readmore span{
+#paging span{
 	color: #676767;
 	font-family: 微软雅黑;
-	display: inline-block;
 	font-size: 15px;
 	line-height: 3.5;
-	width: 410px;
-	text-align: right;
+	text-align: center;
 }
 
-#readmore a{
+#paging .word{
+	margin-left: 7px;
+}
+
+#paging .now_page{
+	margin-left: 7px;
+}
+
+
+#paging a{
 	display: inline-block;
-	width: 780px;
+	margin-left: 7px;
 }
 
-#readmore a img{
-	width: 13px;
-	height: 13px;
-}
-
+/*about me*/
 #about-me{
 	margin-top: 25px;
 	margin-left: 25px;
@@ -854,20 +553,37 @@ img{
 	font-weight: bold;
 }
 
+.right-tr{
+	height: 25px;
+}
+
+.right-a{
+	vertical-align: top;
+}
+
+.right-title{
+    height: 40px;
+	display: inline-block;
+	line-height: 3;
+	font-size: 16px;
+	padding-left: 10px;
+	font-family: 微软雅黑;
+	color: #848484;
+}
+
 #latest-articles{
 	width: 225px;
 	/*height: 260px;*/
 	background-color: #E3E3E3;
 }
 
-#latest-articles span{
-	height: 40px;
+.right-span{
 	display: inline-block;
-	line-height: 3;
-	font-size: 16px;
-	padding-left: 20px;
+	word-break: break-all;
+	font-size: 14px;
 	font-family: 微软雅黑;
 	color: #848484;
+	width:190px;
 }
 
 #latest-articles ul span:hover{
@@ -880,50 +596,43 @@ img{
 	list-style-type:none;
 	margin-right: 0px;
 	display: inline-block;
-	width: 175px;
-	line-height: 2;
+	width: 190px;
+	/*line-height: 2;*/
 }
 
 #right .li-image{
-	width: 8px;
-	height: 8px;
-	margin-top: 12px;
+	width: 6px;
+	height: 6px;
+	margin-top: 11.4px;
 	margin-right: 3px;
 	display: inline-block;
 }
 
 #right .li-image-td{
 	vertical-align: top;
+	/*height: 25px;*/
 }
 
 #right hr{
-	width: 185px;
+	width: 200px;
 	height:0px;
 	border: 1px solid #CCCCCC;
+	margin-bottom:0px;
 }
 
 #latest-articles ul{
 	margin: 0px;
 	padding-top: 0px;
 	padding-bottom: 16px;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 #latest-articles ul span{
 	padding-left: 0px;
 	padding-top: 0px;
-	height: 30px;
+	/*height: 20px;*/
 	line-height: 2;
-}
-
-#clickrank span{
-	height: 40px;
-	display: inline-block;
-	line-height: 3;
-	font-size: 16px;
-	padding-left: 20px;
-	font-family: 微软雅黑;
-	color: #848484;
+	vertical-align: top;
 }
 
 #clickrank{
@@ -935,14 +644,16 @@ img{
 #clickrank ul span{
 	padding-left: 0px;
 	padding-top: 0px;
-	height: 30px;
+	/*height: 20px;*/
 	line-height: 2;
-	display: inline-block;
+	/*display: inline-block;*/
+	vertical-align: top;
 }
 
 #clickrank ul {
 	padding-bottom: 20px;
-	padding-left: 20px;
+	padding-left: 10px;
+	margin:0px;
 }
 
 #clickrank ul span:hover{

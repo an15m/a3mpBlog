@@ -1,4 +1,4 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -28,7 +28,7 @@
 			</li>
 		</ul>
 		<div id='statistics'>
-			<p>总访问量：{$total_visit}</p>
+			<p>总访问量：<?php echo ($total_visit); ?></p>
 		</div>
 	</div>
 </body>
