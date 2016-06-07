@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="__CSS__/admin_index.css">
 </head>
     <frameset cols="*,1200px,*">
-    	<frame scrc="">
+    	<frame src="">
     	<frameset rows="100px,*">
     		<frame name='menu' src="__URL__/menu">
     		<frame name='middle' src="__URL__/manage_articles">

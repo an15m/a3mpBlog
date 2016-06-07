@@ -12,13 +12,13 @@
 
             //获取处理其他信息
             $other=M("Other");
-            $otherRst=$other->find(0);
+            $otherRst=$other->find(1);
             $this->assign("motto",$otherRst['motto']);
             $this->assign("now_learn",$otherRst['now_learn']);
             //记录访问次数
             $total_visit=$otherRst['total_visit'];
             $total_visit_data['total_visit']=$total_visit+1;
-            $other->where('id = 0')->save($total_visit_data);
+            $other->where('id = 1')->save($total_visit_data);
 
             //最近文章
             $latest_articles=M("Articles");
@@ -128,7 +128,16 @@
                 $end_article = $start_article + $number_one_page - 1;
             }
             for($i=$start_article;$i <= $end_article;$i++){
-                $rst[$i]['content'] = explode("<input type=\"hidden\"", $rst[$i]['content'])[0]." 未完待续‥‥‥";
+                $strs = explode("<input type=\"hidden\" value=\"Just for something ! You can ignore it.\">", $rst[$i]['content']);
+                if(count($strs) <= 1){
+                    $rst[$i]['content'] = $strs[0];
+                }else{
+                    if($strs[1] == ""){
+                        $rst[$i]['content'] = $strs[0];
+                    }else{
+                        $rst[$i]['content'] = $strs[0]." 未完待续‥‥‥";
+                    }
+                }
                 $Parsedown = new Parsedown();
                 $rst[$i]['content'] = $Parsedown->text($rst[$i]['content']);
                 //$rst[$i]['content']=Markdown($rst[$i]['content']);
@@ -159,7 +168,7 @@
 
             //获取处理其他信息
             $other=M("Other");
-            $otherRst=$other->find(0);
+            $otherRst=$other->find(1);
             $this->assign("motto",$otherRst['motto']);
             $this->assign("now_learn",$otherRst['now_learn']);
 
@@ -222,7 +231,7 @@
 
             //获取处理其他信息
             $other=M("Other");
-            $otherRst=$other->find(0);
+            $otherRst=$other->find(1);
             $this->assign("motto",$otherRst['motto']);
             $this->assign("now_learn",$otherRst['now_learn']);
 
@@ -315,7 +324,16 @@
                     $end_article = $start_article + $number_one_page - 1;
                 }
                 for($i=$start_article;$i <= $end_article;$i++){
-                    $rst[$i]['content'] = explode("<input type=\"hidden\"", $rst[$i]['content'])[0]." 未完待续‥‥‥";
+                    $strs = explode("<input type=\"hidden\" value=\"Just for something ! You can ignore it.\">", $rst[$i]['content']);
+                    if(count($strs) <= 1){
+                        $rst[$i]['content'] = $strs[0];
+                    }else{
+                        if($strs[1] == ""){
+                            $rst[$i]['content'] = $strs[0];
+                        }else{
+                            $rst[$i]['content'] = $strs[0]." 未完待续‥‥‥";
+                        }
+                    }
                     $Parsedown = new Parsedown();
                     $rst[$i]['content'] = $Parsedown->text($rst[$i]['content']);
                     //$rst[$i]['content']=Markdown($rst[$i]['content']);
@@ -351,7 +369,7 @@
 
             //获取处理其他信息
             $other=M("Other");
-            $otherRst=$other->find(0);
+            $otherRst=$other->find(1);
             $this->assign("motto",$otherRst['motto']);
             $this->assign("now_learn",$otherRst['now_learn']);
 
@@ -372,7 +390,7 @@
             
             //取about_me资源
             $about_me = M("About_me");
-            $about_meRst = $about_me->find(0);
+            $about_meRst = $about_me->find(1);
             $Parsedown = new Parsedown();
             $about_meRst['content'] = $Parsedown->text($about_meRst['content']);
             $this->assign("about_me_content",$about_meRst['content']);
@@ -460,7 +478,7 @@
 
             //获取处理其他信息
             $other=M("Other");
-            $otherRst=$other->find(0);
+            $otherRst=$other->find(1);
             $this->assign("motto",$otherRst['motto']);
             $this->assign("now_learn",$otherRst['now_learn']);
 
@@ -544,7 +562,16 @@
                 $end_article = $start_article + $number_one_page - 1;
             }
             for($i=$start_article;$i <= $end_article;$i++){
-                $searchRst[$i]['content'] = explode("<input type=\"hidden\"", $searchRst[$i]['content'])[0]." 未完待续‥‥‥";
+                $strs = explode("<input type=\"hidden\" value=\"Just for something ! You can ignore it.\">", $rst[$i]['content']);
+                if(count($strs) <= 1){
+                    $rst[$i]['content'] = $strs[0];
+                }else{
+                    if($strs[1] == ""){
+                        $rst[$i]['content'] = $strs[0];
+                    }else{
+                        $rst[$i]['content'] = $strs[0]." 未完待续‥‥‥";
+                    }
+                }
                 $Parsedown = new Parsedown();
                 $searchRst[$i]['content'] = $Parsedown->text($searchRst[$i]['content']);
                 //$searchRst[$i]['content']=Markdown($searchRst[$i]['content']);

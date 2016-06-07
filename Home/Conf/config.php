@@ -6,8 +6,8 @@
 			'__JS__'=>__ROOT__.'/Public/Js',
 			'__IMAGES__'=>__ROOT__.'/Public/Images'
 		),
-		'DB_PREFIX'=>'myblog_',  //设置表前缀
-		'DB_DSN'=>'mysql://root:123456@localhost:3306/myblog',//使用DSN方式配置数据库信息
+		'DB_PREFIX'=>'dandelionblog_',  //设置表前缀
+		'DB_DSN'=>'mysql://root:123456@127.0.0.1:3306/myblog',//
 		'URL_HTML_SUFFIX'=>'html|shtml|php',//限制伪静态的后缀
 	);
 ?>

@@ -6,6 +6,7 @@
 	<script src="__JS__/jquery-1.9.0.js" type='text/javascript'></script>
 	<script src="__JS__/index.js" type='text/javascript'></script>
 	<link rel="stylesheet" type="text/css" href="__CSS__/index.css">
+	<link rel="stylesheet" type="text/css" href="__CSS__/github-markdown.css">
 	<link rel="SHORTCUT ICON" href="__IMAGES__/k.ico">
 </head>
 <body>
@@ -14,7 +15,7 @@
 			<div id='header'>
 				<div id='title'>
 				<a href="__APP__">
-					<img src="__IMAGES__/snail.png">
+					<img src="__IMAGES__/dandelionBlog.png">
 				</a>
 				</div>
 				<div id='searchdiv'>
@@ -82,7 +83,7 @@
 					<span>友情链接</span><br>
 					<?php if(is_array($link)): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$link_vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($link_vo["url"]); ?>" target="_blank">
 							<span><?php echo ($link_vo["title"]); ?></span>
-						</a><?php endforeach; endif; else: echo "" ;endif; ?>
+						</a><br><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
 			</div>
 			<div id='middle'>
@@ -98,7 +99,7 @@
 								<span class='title'><?php echo ($article["title"]); ?></span>
 							</a>
 							<hr class='readall-hr'>
-							<div class='content' id="content-id<?php echo ($article["id"]); ?>">
+							<div class='markdown-body' id="content-id<?php echo ($article["id"]); ?>">
 								<?php echo ($article["content"]); ?>
 							</div>
 							<hr class='readall-hr'>
@@ -112,7 +113,7 @@
 				<div id='paging' style="display:<?php echo ($paging_display); ?>">
 					<?php echo ($paging); ?>
 				</div>
-				<div id='about-me' style="display:<?php echo ($about_me); ?>">
+				<div class='markdown-body' id='about-me' style="display:<?php echo ($about_me); ?>">
 					<?php echo ($about_me_content); ?>
 				</div>
 			</div>

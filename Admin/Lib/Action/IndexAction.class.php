@@ -8,7 +8,7 @@ class IndexAction extends PublicAction {
     //menu
     public function menu(){
     	$other=M("Other");
-    	$otherRst=$other->find(0);
+    	$otherRst=$other->find(1);
     	$this->assign("total_visit",$otherRst['total_visit']);
     	$this->display();
     }
@@ -55,6 +55,23 @@ class IndexAction extends PublicAction {
         if($now_page > $total_pages || $now_page < 1){
             $this->error('小伙伴不要调皮');
         }
+        $paging = "";
+        if($now_page <= 1){
+            $paging .= "<span class='paging'>首页</span>";
+            $paging .= "<span class='paging'>上一页</span>";
+        }else{
+            $paging .= "<a class='paging' href='__URL__/".$fun."/now_page/1'>首页</a>";
+            $paging .= "<a class='paging' href='__URL__/".$fun."/now_page/".($now_page-1)."'>上一页</a>";
+        }
+        if($now_page >= $total_pages){
+            $paging .= "<span class='paging'>下一页</span>";
+            $paging .= "<span class='paging'>尾页</span>";
+            
+        }else{
+            $paging .= "<a class='paging' href='__URL__/".$fun."/now_page/".($now_page+1)."'>下一页</a>";
+            $paging .= "<a class='paging' href='__URL__/".$fun."/now_page/".$total_pages."'>尾页</a>";
+        }
+        $this->assign("paging",$paging);
 
         //分配资源
         $this->assign("articles",array_slice($rst,($now_page-1)*$num_one_page,$num_one_page));
@@ -104,16 +121,36 @@ class IndexAction extends PublicAction {
         $articles=M("Articles");
         $lastId=$articles->delete($articleId);
         if($lastId){
-            $this->success('删除成功');
+            $this->success('删除成功'); 
         }else{
             $this->error('删除失败');
         }
     }
 
     public function change_article(){
+        $tech=M("Tech");
+        $techRst=$tech->select();
         $articleId=$_GET['id'];
         $articles=M("Articles");
         $article=$articles->find($articleId);
+        $option = "类别：<select id='s1_text1_bold' name='type'>";
+        if($article['type'] == '生活'){
+            $option .= "<option value='生活' selected='selected'>生活</option>";
+            for($i = 0;$i < count($techRst);$i++){
+                $option .= "<option value='".$techRst[$i]['techname']."'>".$techRst[$i]['techname']."</option>";
+            }
+        }else{
+            $option .= "<option value='生活'>生活</option>";
+            for($i = 0;$i < count($techRst);$i++){
+                if($article['type'] == $techRst[$i]['techname']){
+                    $option .= "<option selected='selected' value='".$techRst[$i]['techname']."'>".$techRst[$i]['techname']."</option>";
+                }else{
+                    $option .= "<option value='".$techRst[$i]['techname']."'>".$techRst[$i]['techname']."</option>";
+                }   
+            }
+        }
+        $option .= "</select><br>";
+        $this->assign("option",$option);
         $year = date("Y",$article['time']);
         $month = date("m",$article['time']);
         $day = date("d",$article['time']);
@@ -132,6 +169,7 @@ class IndexAction extends PublicAction {
         $month = $_POST['month'];
         $day = $_POST['day'];
         $data['time']=strtotime($year.$month.$day);
+        $data['type'] = $_POST['type'];
         $data['content']=$_POST['content'];
         $data['title']=$_POST['title'];
         $where['id']=$articleId;
@@ -145,7 +183,7 @@ class IndexAction extends PublicAction {
 
     public function change_other(){
     	$other=M("Other");
-    	$otherRst=$other->find(0);
+    	$otherRst=$other->find(1);
     	$this->assign("other",$otherRst);
     	$this->display();
     }
@@ -154,7 +192,7 @@ class IndexAction extends PublicAction {
     	$other=M("Other");
     	$data['motto']=$_POST['motto'];
     	$data['now_learn']=$_POST['now_learn'];
-    	$lastId=$other->where('id = 0')->save($data);
+    	$lastId=$other->where('id = 1')->save($data);
     	if($lastId){
     		$this->success('成功!');
     	}else{
@@ -255,7 +293,7 @@ class IndexAction extends PublicAction {
 
     public function about_me(){
         $about_me=M("About_me");
-        $about_meRst=$about_me->find(0);
+        $about_meRst=$about_me->find(1);
         $this->assign("about_me",$about_meRst);
         $this->display();
     }
@@ -263,7 +301,7 @@ class IndexAction extends PublicAction {
     public function do_about_me(){
         $about_me=M("About_me");
         $data['content']=$_POST['content'];
-        $lastId=$about_me->where('id = 0')->save($data);
+        $lastId=$about_me->where('id = 1')->save($data);
         if($lastId){
             $this->success('修改成功',U("Index/about_me"));
         }else{

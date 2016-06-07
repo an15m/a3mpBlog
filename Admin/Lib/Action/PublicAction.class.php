@@ -2,7 +2,7 @@
 	class PublicAction extends Action{
 
 		public function _initialize(){
-			if($_SESSION['admin_login']!=1){
+			if($_SESSION['admin_login'] != '1'){
 				$this->redirect('Login/index');
 			}
 		}

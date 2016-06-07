@@ -13,9 +13,9 @@
 				<?php if(is_array($tech)): $i = 0; $__LIST__ = $tech;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tech): $mod = ($i % 2 );++$i;?><option value="<?php echo ($tech["techname"]); ?>"><?php echo ($tech["techname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 	        </select><br>
 	        时间：
-	        <input type="text" name='year' size=5 value='<?php echo ($year); ?>'>年
-	        <input type="text" name='month' size=5 value='<?php echo ($month); ?>'>月
-	        <input type="text" name='day' size=5 value='<?php echo ($day); ?>'>日<br>
+	        <input type="text" name='year' size=2 value='<?php echo ($year); ?>'>年
+	        <input type="text" name='month' size=2 value='<?php echo ($month); ?>'>月
+	        <input type="text" name='day' size=2 value='<?php echo ($day); ?>'>日<br>
 	        标题：<input type="text" name="title" id="title"><br>
 	        内容：<br><textarea name="content" id="" cols="130" rows="30"></textarea><br>
 	        <input type="submit" value="发表">

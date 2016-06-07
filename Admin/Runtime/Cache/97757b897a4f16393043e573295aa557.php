@@ -43,6 +43,7 @@
 			<tr>
 				<td>
 					<form action='__URL__/<?php echo ($fun); ?>' method='get'>
+						<?php echo ($paging); ?>
 						<span>共<?php echo ($total_pages); ?>页，到第</span>
 						<input type='text' value="<?php echo ($now_page); ?>" name='now_page' size=3></input>
 						<button type='submit'>确定</button>

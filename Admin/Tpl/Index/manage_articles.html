@@ -47,6 +47,7 @@
 			<tr>
 				<td>
 					<form action='__URL__/{$fun}' method='get'>
+						{$paging}
 						<span>共{$total_pages}页，到第</span>
 						<input type='text' value="{$now_page}" name='now_page' size=3></input>
 						<button type='submit'>确定</button>

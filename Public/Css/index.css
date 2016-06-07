@@ -36,8 +36,8 @@ img{
 }
 
 #title img{
-	width: 66px;
-	height: 28px;
+	width: 205px;
+	height: 30px;
 	position: relative;
 	left: 20px;
 	top: 14px;
@@ -265,7 +265,7 @@ img{
 #link{
 	width: 175px;
 	margin-left: 0px;
-	padding-left: 50px;
+	padding-left: 30px;
 	background-color:#232B2D; 
 }
 
@@ -289,9 +289,10 @@ img{
 
 #link a span{
 	display: inline-block;
-	padding-left: 60px;
+	padding-left: 37px;
 	margin-top: 10px;
 	margin-left: 0px;
+	word-break: break-all;
 }
 
 /*body->中部*/
@@ -331,11 +332,12 @@ img{
 }
 
 #middle-content div a .title{
-	color: #676767;
+	/*color: #676767;*/
+	color: #000;
 	font-size: 25px;
 	font-family: 微软雅黑;
 	display: inline-block;
-	margin-left: 30px;
+	margin-left: 20px;
 	margin-top: 15px;
 	word-break: break-all;
 	width:720px;
@@ -363,6 +365,18 @@ img{
 	display: inline-block;
 }
 
+
+.markdown-body {
+    box-sizing: border-box;
+    width: 740px;
+    margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 5px;
+	height: auto;
+	font-family: 微软雅黑;
+}
+
+/*文章内容*/
 #middle-content div .content{
 	height: auto;
 	width: 740px;
@@ -385,7 +399,7 @@ img{
 	cursor: text;
 	position: relative;
 	line-height: 36px;
-	color: #666666;
+	/*color: #666666;*/
 }
 
 #middle-content div .content ul{
