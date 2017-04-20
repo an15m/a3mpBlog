@@ -5,7 +5,7 @@
 		}
 
 		public function do_login(){
-			if(md5($_POST['password'])=="a77a827b95ae6fcbe58b565c6f65a2e8"){
+			if(md5($_POST['password'])=="d5ac70e307c46da82a25a8b9c22601fc"){
 				$_SESSION['admin_login']='1';
 				$this->success('登陆成功！',U("Index/index"));
 			}else{

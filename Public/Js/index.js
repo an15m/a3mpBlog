@@ -15,7 +15,6 @@ $(function(){
 		});
     });
     */
-    var root_url = '/dandelionblog/';
     
     //测试
 	$("#btn1").bind("click",function(){

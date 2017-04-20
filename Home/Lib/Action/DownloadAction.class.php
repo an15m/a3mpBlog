@@ -7,7 +7,6 @@
 
 	 	public function download(){
 	 		$file_name=$_GET['filename'];
-	 		//$file_sub_path=$_SERVER['DOCUMENT_ROOT']."/dandelionBlog/Public/Download/"; 
 	 		$file_sub_path="./Public/Download/";
 	 		$file_path=$file_sub_path.$file_name;
 	 		if(!file_exists($file_path)){ 
