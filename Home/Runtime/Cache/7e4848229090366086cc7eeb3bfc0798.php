@@ -5,6 +5,9 @@
 	<title>Snail | 杨锦修的个人博客</title>
 	<script src="__JS__/jquery-1.9.0.js" type='text/javascript'></script>
 	<script src="__JS__/index.js" type='text/javascript'></script>
+	<link rel="stylesheet" href="__CSS__/highlight.js/github.css">
+	<script src="__JS__/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<link rel="stylesheet" type="text/css" href="__CSS__/index.css">
 	<link rel="stylesheet" type="text/css" href="__CSS__/github-markdown.css">
 	<link rel="SHORTCUT ICON" href="__IMAGES__/k.ico">
@@ -15,7 +18,7 @@
 			<div id='header'>
 				<div id='title'>
 				<a href="__APP__">
-					<img src="__IMAGES__/dandelionBlog.png">
+					<span>an15m</span>
 				</a>
 				</div>
 				<div id='searchdiv'>
